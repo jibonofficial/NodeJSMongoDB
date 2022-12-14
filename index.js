@@ -13,7 +13,8 @@ MongoClient.connect(URL, function (error,MyMongoClient) {
         // InsertData(MyMongoClient);
         // DeleteOneItem(MyMongoClient)
         // DeleteAllItem(MyMongoClient)
-        FindOneWithCondition(MyMongoClient);
+        // FindOneWithCondition(MyMongoClient);
+        FindALlData(MyMongoClient);
     }
     
 });
@@ -80,12 +81,21 @@ function InsertData(MyMongoClient) {
 
 
 // }
-
+/* 
 function FindOneWithCondition(MyMongoClient) {
     var MyDataBase= MyMongoClient.db("company");
     var MyCollection= MyDataBase.collection("employee");
     var FindObj={"Roll":"05"}
     MyCollection.findOne(FindObj,function (error,result){
+        console.log(result);
+    })
+    
+} */
+
+function FindALlData(MyMongoClient) {
+    var MyDataBase= MyMongoClient.db("company");
+    var MyCollection= MyDataBase.collection("employee");
+    MyCollection.find().toArray(function (error,result){
         console.log(result);
     })
     
