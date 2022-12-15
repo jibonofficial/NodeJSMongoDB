@@ -44,44 +44,38 @@ function InsertData(MyMongoClient) {
         
     })
 }
-
-// function DeleteOneItem(MyMongoClient) {
-//     var MyDataBase= MyMongoClient.db("company");
-//     var MyCollection= MyDataBase.collection("employee");
-//     var DeleteItem={Roll:"03"}
-//     MyCollection.deleteOne(DeleteItem, function (error){
+/*
+function DeleteOneItem(MyMongoClient) {
+    var MyDataBase= MyMongoClient.db("company");
+    var MyCollection= MyDataBase.collection("employee");
+    var DeleteItem={Roll:"03"}
+    MyCollection.deleteOne(DeleteItem, function (error){
         
-//         if(error) {
-//             console.log("Data Delete Fail")
-//         }
+        if(error) {
+            console.log("Data Delete Fail")
+        }
 
-//         else{
-//             console.log("Data Delete  Success")
-//         }
-//     });
+        else{
+            console.log("Data Delete  Success")
+        }
+    });
 
-
-
-// }
-// function DeleteAllItem(MyMongoClient) {
-//     var MyDataBase= MyMongoClient.db("company");
-//     var MyCollection= MyDataBase.collection("employee");
+}
+function DeleteAllItem(MyMongoClient) {
+    var MyDataBase= MyMongoClient.db("company");
+    var MyCollection= MyDataBase.collection("employee");
     
-//     MyCollection.deleteMany(function (error,ResultObj){
+    MyCollection.deleteMany(function (error,ResultObj){
         
-//         if(error) {
-//             console.log("Data Delete Fail")
-//         }
+        if(error) {
+            console.log("Data Delete Fail")
+        }
 
-//         else{
-//             console.log("Data Delete  Success")
-//         }
-//     });
-
-
-
-// }
-/* 
+        else{
+            console.log("Data Delete  Success")
+        }
+    });
+}
 function FindOneWithCondition(MyMongoClient) {
     var MyDataBase= MyMongoClient.db("company");
     var MyCollection= MyDataBase.collection("employee");
@@ -90,7 +84,7 @@ function FindOneWithCondition(MyMongoClient) {
         console.log(result);
     })
     
-} */
+} 
 
 function FindALlData(MyMongoClient) {
     var MyDataBase= MyMongoClient.db("company");
@@ -99,4 +93,4 @@ function FindALlData(MyMongoClient) {
         console.log(result);
     })
     
-}
+}  */
